@@ -18,3 +18,5 @@ gcc compiler
 
 추가로..    
 visual studio 에서는 MSVC 라고 독자적인 컴파일러를 쓰며, 무거운 studio 없이 컴파일러(cl.exe)만 따로 받을 수도 있는 모양이다.    
+
+gpg key 추가   
