@@ -33,4 +33,6 @@ apt install gnupg2
 
 export GPG_TTY=$(tty)
 ```
-이를 사용해서 해결 ..(왜..??)
+이를 사용해서 해결 ..    
+gpg 키에 암호가 걸려 있을 때 환경변수 GPG_TTY를 지정해 주지 않아 생기는 문제!   
+
