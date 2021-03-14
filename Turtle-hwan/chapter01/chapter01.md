@@ -21,7 +21,7 @@ visual studio 에서는 MSVC 라고 독자적인 컴파일러를 쓰며, 무거�
 
 gpg key 추가   
 ---
-오류 발생   
+- 오류 발생   
 ```
 error: gpg failed to sign the data
 fatal: failed to write commit object
@@ -37,9 +37,9 @@ export GPG_TTY=$(tty)
 gpg 키에 암호가 걸려 있을 때 환경변수 GPG_TTY를 지정해 주지 않아 생기는 문제!   
 
 
-오류 발생 2   
+- 오류 발생 2   
+git push 불가 문제...  
 
-git push 불가 문제...    
 ```js
 Missing or invalid credentials.
 Error: socket hang up
@@ -52,6 +52,10 @@ Error: socket hang up
 }
 ```
 
-vscode 환경설정에서 git : terminalAuthentication 옵션 선택 취소 하면 git push 할 때마다 github 아이디 비번 입력으로 push 가능?!?!    
+vscode 환경설정에서 git : terminalAuthentication 옵션 선택 취소 하면 git push 할 때마다 github 아이디 비번 입력으로 push 가능??  
 [참고1](https://stackoverflow.com/questions/62697845/git-push-origin-master-missing-or-invalid-credentials)
 [참고2](https://stackoverflow.com/questions/62860280/git-push-missing-or-invalid-credentials-fatal-authentication-failed-for-http/65252723#65252723)
+
+=> 이때 git commit unverify 뜸
+
+=> 사실 git : terminalAuthentication 문제가 아니라, git config user.email, user.name 추가해 주어야 했음...   
