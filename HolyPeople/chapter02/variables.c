@@ -3,12 +3,12 @@
 int main(void) {
 	
 	int example = 78;
-	int* p = &example;
-	int** dp = &p;
+	double df = 3.141592;
+	char name[] = "Hello, peter!";
 	
 	printf("%d\n", example);
-	printf("%p %d\n", p, *p);
-	printf("%p %p %d\n", dp, *dp, **dp);
+	printf("%lf\n", df);
+	printf("%s\n", name);
 	
 	return 0;
 }
